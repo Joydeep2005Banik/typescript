@@ -111,8 +111,9 @@ function example6(item: college)
 {
     switch (item.courseName) {
         case "typescript":
-            return `the course id is ${item.courseid}`;
+            return `the course id is ${item.courseName}`;
         default:
             return `the student name is ${item.name} and the age is ${item.age}`;
     }
 }
+console.log(example6({courseName: "typescript", courseid: "23"}));
